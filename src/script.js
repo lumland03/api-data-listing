@@ -1,12 +1,14 @@
 console.log('👍 JS Connected');
 
+
 // Scripting
 
 // Data source
 //const url = "";
+const url = "https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0";
 
 // Get data
-fetch(url)
+fetch('https://pokeapi.co/api/v2/pokemon/157/')
   .then( response  => response.json())
   .then( data  => {
     
@@ -19,7 +21,7 @@ fetch(url)
     const dataContainer = document.querySelector(".dataContainer");
 
     // loop through data
-    data.forEach( student => {
+    data.forEach( name => {
       
       // template
       const template = ``;
@@ -28,3 +30,5 @@ fetch(url)
       dataContainer.insertAdjacentHTML("afterbegin", template);
     });
   });
+
+  
