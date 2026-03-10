@@ -8,13 +8,13 @@ console.log('👍 JS Connected');
 const url = "https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0";
 
 // Get data
-fetch('https://pokeapi.co/api/v2/pokemon/157/')
+fetch('https://pokeapi.co/api/v2/pokemon/1/')
   .then( response  => response.json())
   .then( data  => {
     
     // check-check: is the data good?
     console.log(data);
-    console.log(data.Name);
+    console.log(data.name);
     console.log(data.Image);
 
     // get container for data
